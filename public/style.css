@@ -60,10 +60,6 @@ th {
     font-size: xx-large;
 }
 
-.header .logo:hover {
-    transform: scale(1.2);
-}
-
 .header .nav-links {
     list-style: none;
     margin-bottom: 0px;
