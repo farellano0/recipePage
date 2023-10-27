@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetips</title>
+    <link rel="stylesheet" href="./public/style.css">
+    <script src="https://kit.fontawesome.com/7f30cdf123.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./public/img/logo.png" alt="">
+            <h1 tabindex="1">RECETIPS</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Inicio</a></li>
+                <li><a href="#"><i class="fa-solid fa-book-bookmark" style="color: #ffffff;"></i> Recetas</a></li>
+                <li><a href="#"><i class="fa-solid fa-book-open" style="color: #ffffff;"></i> Recetario</a></li>
+                <li><a href="#"><i class="fa-solid fa-newspaper" style="color: #ffffff;"></i> Novedades</a></li>
+            </ul>
+        </nav>
+        <div class="buscador">
+            <!-- Etiqueta oculta visualmente pero accesible para lectores de pantalla -->
+            <label for="buscarReceta" class="visually-hidden">Buscar receta</label>
+            <input type="text" placeholder="Buscar" id="buscarReceta">
+            
+            <!-- Descripción clara para el botón y descripción accesible para el icono -->
+            <button id="btn" aria-label="Buscar receta">
+                <i class="fa-solid fa-magnifying-glass" style="color: #1b3039;" aria-hidden="true"></i>
+            </button>
+        </div>
+        
+    </header>
+    <main>
+        <section class="seccion">
+            <h2>¿Qué quieres cocinar?</h2>
+            <div class="tipoComida">
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/pollo.webp" alt="">
+                        <label for="">Pollo</label>
+                    </a>
+                </div>
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/carneMolida.webp" alt="">
+                        <label for="">Carne Molida</label>
+                    </a>
+                    
+                </div>
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/postre.webp" alt="">
+                        <label for="">Postres</label>
+                    </a>
+                    
+                </div>
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/atún.webp" alt="">
+                        <label for="">Atún</label>
+                    </a>
+                </div>
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/pasta.webp" alt="">
+                        <label for="">Pastas</label>
+                    </a>
+                </div>
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/desayuno.webp" alt="">
+                        <label for="">Desayunos</label>
+                    </a>
+                </div>
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/Lunch.webp" alt="">
+                        <label for="">Lunch</label>
+                    </a>
+                </div>
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/comidas.webp" alt="">
+                    <label for="">Comidas</label>
+                    </a>
+                </div>
+                <div class="comida">
+                    <a href="#">
+                        <img src="./public/img/cenas.webp" alt="">
+                        <label for="">Cenas</label>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h3>TOP 5 RECETAS DE LA SEMANA</h3>
+            <div class="recetas">
+                <div class="receta">
+                    <a href="#">
+                        <img src="./public/img/t1.webp" alt="">
+                        <div class="card">
+                            <p>MINI HAMBURGUESAS DE HUEVO</p>
+                            <div class="raiting" aria-label="raiting, cinco estrellas">
+                                <p>5.0</p>
+                                <span class="visually-hidden">Cinco estrellas: </span>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                            </div>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="receta">
+                    <a href="#">
+                        <img src="./public/img/t5.webp" alt="">
+                        <div class="card">
+                            <p>TAMALES DE ELOTE DE PICO DE GALLO</p>
+                            <div class="raiting" aria-label="raiting, cinco estrellas">
+                                <p>5.0</p>
+                                <span class="visually-hidden">Cinco estrellas: </span>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="receta">
+                    <a href="#">
+                        <img src="./public/img/t2.webp" alt="">
+                        <div class="card">
+                            <p>CREMA DE LECHUGA CON BETABEL</p>
+                            <div class="raiting" aria-label="raiting, cinco estrellas">
+                                <p>5.0</p>
+                                <span class="visually-hidden">Cinco estrellas: </span>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                            </div>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="receta">
+                    <a href="#">
+                        <img src="./public/img/t3.webp" alt="">
+                        <div class="card">
+                            <p>ENCHILADAS SUIZAS</p>
+                            <div class="raiting" aria-label="raiting, cinco estrellas">
+                                <p>5.0</p>
+                                <span class="visually-hidden">Cinco estrellas: </span>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                            </div>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="receta">
+                    <a href="#">
+                        <img src="./public/img/t4.webp" alt="">
+                        <div class="card">
+                            <p>FETTUCCINE CON ALAMBRE DE POLLO</p>
+                            <div class="raiting" aria-label="raiting, cinco estrellas">
+                                <p>5.0</p>
+                                <span class="visually-hidden">Cinco estrellas: </span>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                                <i class="fa-solid fa-star" style="color: #eec608;"></i>
+                            </div>
+                        </div>
+                        
+                    </a>
+                </div>                    
+            </div>
+
+        </section>
+
+        <section class="seccion">
+            <h3>TIP Y NOTA DEL DÍA</h3>
+            <div class="row">
+                <div class="nota">
+                    <h4>7 Platillos que puedes preparar con frijoles refritos</h4>
+                    <p>Los frijoles refritos son un ingrediente versátil y fundamental en la gastronomía mexicana, con un sabor que los hace indispensables en múltiples recetas.</p>
+                    <p>Si tienes un poco de frijoles refritos, ya sea negros o bayos, en tu refrigerador, no dudes en preparar alguna de estas 7 opciones, ¡te fascinarán! Lo mejor de todo es que hay algo para todos los gustos.</p>
+                    <a href="">Ver 7 platillos que puedes preparar con frijoles refritos</a>
+                </div>
+                <div class="img">
+                    <img src="./public/img/tip.webp" alt="Platillo de friojoles refritos con queso y totopos">
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h3>RECETARIOS PARA DESCARGAR</h3>
+            <div class="recetarios">
+                <div class="recetario">
+                    <a href="#">
+                        <img src="./public/img/r1.webp" alt="Recetario 'Comidas con Tomatito'.">
+                    </a>
+                </div>
+                <div class="recetario">
+                    <a href="#">
+                        <img src="./public/img/r2.webp" alt="Recetario 'Antojitos garnacheros para celebrar a México'.">
+                    </a>
+                </div>
+                <div class="recetario">
+                    <a href="#">
+                        <img src="./public/img/r3.webp" alt="Recetario 'Cenas saludables'.">
+                    </a>
+                </div>
+                <div class="recetario">
+                    <a href="#">
+                        <img src="./public/img/r4.webp" alt="Recetario '10 tacos de leyenda'.">
+                    </a>
+                </div>
+                <div class="recetario">
+                    <a href="#">
+                        <img src="./public/img/r5.webp" alt="Recetario 'Un mundo de chocolate para mamá'.">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="doble">
+            <section class="columns" style="height: fit-content;">
+                <h3>VIDEO RECETA DE LA SEMANA</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Us6gzsVv_MA?si=OOZ5ujMZClHi4_BN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            <section class="columns">
+                <h3>CONTÁCTANOS</h3>
+                <p>Si tienes alguna duda, sugerencia o deseas compartir una receta con nosotros, ¡nos encantaría escucharte!</p>
+                
+                <form action="#" method="post">
+                    <!-- Nombre completo -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Escribe tu nombre completo">
+                    </div>
+            
+                    <!-- Correo electrónico -->
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required aria-required="true" placeholder="ejemplo@correo.com">
+                    </div>
+            
+                    <!-- Asunto del mensaje -->
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required aria-required="true">
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="duda">Tengo una duda</option>
+                            <option value="sugerencia">Quiero hacer una sugerencia</option>
+                            <option value="compartir-receta">Deseo compartir una receta</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+            
+                    <!-- Mensaje -->
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required aria-required="true" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+            
+                    <!-- Botón de envío -->
+                    <div class="form-group">
+                        <button type="submit">Enviar mensaje</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <section class="seccion">
+            <h3>RECETAS FÁCILES DE USAR</h3>
+            <table>
+                <tr>
+                    <th>Nombre de la Receta</th>
+                    <th>Ingredientes Principales</th>
+                    <th>Tiempo de Preparación</th>
+                </tr>
+                <tr>
+                    <td>Ensalada César</td>
+                    <td>Lechuga, croutones, queso parmesano, pollo</td>
+                    <td>20 minutos</td>
+                </tr>
+                <tr>
+                    <td>Pasta Carbonara</td>
+                    <td>Pasta, huevos, queso pecorino, panceta</td>
+                    <td>30 minutos</td>
+                </tr>
+                <tr>
+                    <td>Gazpacho</td>
+                    <td>Tomate, pepino, pimiento, cebolla</td>
+                    <td>25 minutos + refrigeración</td>
+                </tr>
+                <tr>
+                    <td>Paella Valenciana</td>
+                    <td>Arroz, pollo, conejo, judías verdes, tomate</td>
+                    <td>1 hora</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
